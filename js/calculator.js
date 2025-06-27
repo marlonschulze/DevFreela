@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
      const numero = "5551995563343";
     const linkWhatsapp = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-    btnWhatsapp.href = linkWhatsapp;
+    btnWhats.href = linkWhatsapp;
   });
 
   function formatarTipo(tipo) {
