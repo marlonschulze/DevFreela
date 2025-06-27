@@ -60,7 +60,14 @@ document.addEventListener("DOMContentLoaded", function (){
 
      const numero = "5551995563343";
     const linkWhatsapp = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-    btnWhats.href = linkWhatsapp;
+    btnWhats.addEventListener('click', function(e){
+      e.preventDefault();
+      document.getElementById('redirect').classList.remove('redirect-class');
+
+      setTimeout(() => {
+        window.location.href = linkWhatsapp;
+      }, 3000);
+    });
   });
 
   function formatarTipo(tipo) {

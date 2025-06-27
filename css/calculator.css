@@ -140,6 +140,48 @@ button#btn-calcular:hover {
   background-color: #1ebe5d;
 }
 
+/*redirecionamento*/
+#redirect{
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    270deg,
+    #ffffff 0%,
+    #2563eb 50%,
+    #ffffff 100%
+  );
+  background-size: 400% 400%;
+  animation: brilho 4s linear infinite;
+  color: var(--fundo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes brilho {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+#redirect.redirect-class{
+  display: none;
+}
+
+.mensagem-redirect{
+  background: #2563eb;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
 footer {
   margin-bottom: 20px;
   font-size: 14px;
