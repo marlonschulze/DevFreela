@@ -1,0 +1,147 @@
+:root {
+  --azul: #2563eb;
+  --texto: #1f1f1f;
+  --fundo: #f0f4ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--texto);
+  color: var(--fundo);
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  background-color: var(--texto);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-header{
+  height: 100px;
+  width: 0 auto;
+}
+
+main {
+  flex: 1;
+  margin: 20px 40px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: var(--azul);
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+label,
+legend {
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+select,
+input[type="number"],
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button#btn-calcular {
+  background-color: var(--azul);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+button#btn-calcular:hover {
+  background-color: #1e40af;
+}
+
+#resultado {
+  margin-top: 30px;
+}
+
+#resultado.hidden {
+  display: none;
+}
+
+#valor-estimado {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#btn-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+footer {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: white;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Projeto | DevFreela</title>
+  <link rel="stylesheet" href="../css/calculator.css" />
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="../assets/image/devfreela logo.png" alt="DevFreela logo" class="logo-header" />
+  </header>
+
+  <main>
+    <h1>Calcule seu projeto</h1>
+    <p>Preencha as opções abaixo e veja uma estimativa de valor.</p>
+
+    <form id="form-calculadora">
+      <!-- Tipo de projeto -->
+      <label for="tipo">Tipo de projeto:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecione</option>
+        <option value="landing">Landing Page</option>
+        <option value="site">Site Institucional</option>
+        <option value="loja">Loja Virtual</option>
+      </select>
+
+      <!-- Prazo -->
+      <label for="dias">Prazo desejado (dias):</label>
+      <input type="number" id="dias" name="dias" min="1" placeholder="Ex: 5" required />
+
+      <!-- Extras -->
+      <fieldset>
+        <legend>Extras:</legend>
+        <label><input type="checkbox" name="extras" value="responsivo" /> Versão Mobile</label>
+        <label><input type="checkbox" name="extras" value="seo" /> Otimização SEO</label>
+        <label><input type="checkbox" name="extras" value="redes" /> Integração com redes sociais</label>
+      </fieldset>
+
+      <button type="submit" id="btn-calcular">Calcular</button>
+    </form>
+
+    <!-- Resultado -->
+    <div id="resultado" class="hidden">
+      <p id="valor-estimado"></p>
+      <a href="#" id="btn-whatsapp" target="_blank">Falar no WhatsApp</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 DevFreela — Criado por Marlon
+  </footer>
+
+  <script src="../js/calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+:root{
+  --azul: #2563eb;
+  --texto: #1f1f1f;
+  --bg: #f0f4ff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, var(--texto));
+  color: var(--texto);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+header{
+  background-color: var(--texto);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.logo-header{
+  height: 100px;
+  width: 0 auto;
+}
+
+main{
+  flex: 1;
+  padding: 10px 30px;
+}
+
+main h1 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--bg);
+}
+
+main p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--bg);
+}
+
+.tipos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+  overflow-y: hidden;
+}
+
+.card {
+  position: relative;
+  background-color: #3f3f3f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: var(--bg);
+  margin-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: var(--texto);
+}
+
+.card ul {
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: var();
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.card:hover {
+  background: linear-gradient( 200deg, var(--bg), var(--azul));
+}
+
+.btn-ir {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--azul);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.btn-ir:hover {
+  background-color: #1e40af;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+footer{
+  margin: 20px;
+  color: var(--bg);
+}
+
+/* Desktop */
+@media (min-width: 640px) {
+  .tipos {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .btn-ir{
+    margin-top: 30px;
+  }
+}

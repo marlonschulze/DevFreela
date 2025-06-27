@@ -1,0 +1,168 @@
+:root{
+  --fundo: #f0f4ff;
+  --color-text: #1f1f1f;
+  --fundo-color: #2563eb;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  background: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+header{
+  background-color: var(--color-text);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-header{
+  height: 100px;
+  width: 0 auto;
+}
+
+/*página principal*/
+main{
+  flex: 1;
+  padding: 10px 30px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--fundo);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--fundo);
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--fundo-color);
+}
+
+
+/* Botões */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.buttons a.sim {
+  background-color: #2563eb;
+  color: white;
+}
+
+.buttons a.sim:hover {
+  background-color: #1d4ed8;
+}
+
+.buttons a.nao {
+  background-color: #e0e7ff;
+  color: #1e40af;
+}
+
+.buttons a.nao:hover {
+  background-color: #c7d2fe;
+}
+
+.convite {
+  font-size: 1rem;
+  color: var(--fundo);
+  margin-top: 12px;
+  margin-bottom: 8px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-sobre{
+  color: var(--fundo-color);
+  font-size: 16px;
+}
+
+.btn-sobre:hover{
+  color: #1d4ed8;
+}
+
+/* Rodapé */
+footer {
+  padding: 20px 0;
+  font-size: 14px;
+  color: var(--fundo);
+}
+
+/* Responsividade para tablets e desktops */
+@media (min-width: 640px) {
+  header {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+  .buttons a {
+    max-width: 400px;
+  }
+}
