@@ -196,6 +196,14 @@ main p {
   background-color: #1e40af;
 }
 
+.link-manutencao a{
+  color: #e0e7ff;
+}
+
+.link-manutencao a:hover{
+  color: #2563eb;
+}
+
 .selo{
   padding: 20px;
   background: #e0e7ff;

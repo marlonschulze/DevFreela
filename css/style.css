@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -27,6 +26,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
 }
 
 .logo-header{
@@ -80,6 +80,7 @@ h2 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  overflow-y: hidden;
 }
 
 .buttons a {
