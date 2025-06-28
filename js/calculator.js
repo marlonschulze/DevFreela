@@ -39,8 +39,19 @@ document.addEventListener("DOMContentLoaded", function (){
       valorMax *= 1.3;
     }
 
-    const extraMin = extras.length * 100;
-    const extraMax = extras.length * 150;
+    let extraMin = 0;
+    let extraMax = 0;
+
+    extras.forEach(extra => {
+      if(extra === "dominio"){
+        extraMin += 120;
+        extraMax += 200;
+      } else{
+        extraMin += 100;
+        extraMax += 150;
+      }
+    })
+
     valorMin += extraMin;
     valorMax += extraMax;
 
