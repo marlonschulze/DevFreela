@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function (){
     (extras.length > 0 ? `Extras: ${extras.join(", ")}\n\n` : `\n`) + 
     `Estou pronto para conversar!`;
 
-     const numero = "5551995563343";
+     const numero = "5511912345678";
     const linkWhatsapp = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
     btnWhats.addEventListener('click', function(e){
       e.preventDefault();
