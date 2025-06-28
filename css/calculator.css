@@ -36,6 +36,16 @@ header{
 main {
   flex: 1;
   margin: 20px 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInMove 0.5s ease-out forwards;
+}
+
+@keyframes fadeInMove{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h1 {
@@ -105,6 +115,29 @@ button#btn-calcular {
 
 button#btn-calcular:hover {
   background-color: #1e40af;
+}
+
+/*calculando*/
+#calculando{
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--azul);
+  font-weight: bold;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse{
+  0%, 100%{
+    opacity: 0.5;
+  } 
+
+  50%{
+    opacity: 1;
+  }
+}
+
+.hidden{
+  display: none;
 }
 
 #resultado {
@@ -180,6 +213,22 @@ button#btn-calcular:hover {
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.flash {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+  background-color: white;
+  border-radius: 50%;
+  animation: flash 1s infinite;
+  vertical-align: middle;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
 }
 
 footer {

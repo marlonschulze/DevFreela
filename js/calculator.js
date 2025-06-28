@@ -48,7 +48,13 @@ document.addEventListener("DOMContentLoaded", function (){
     const valorFormMax = `R$ ${valorMax.toFixed(2).replace(".",",")}`;
     valorEst.textContent = `Valor estimado: ${valorFormMin} - ${valorFormMax}`;
 
-    res.classList.remove('hidden');
+    document.getElementById('calculando').classList.remove('hidden');
+    res.classList.add('hidden');
+
+    setTimeout(() => {
+      document.getElementById('calculando').classList.add('hidden');
+      res.classList.remove('hidden');
+    }, 3000);
 
     const textoTipo = formatarTipo(tipo);
     const textoExtras = extras.length > 0 ? ` Incluindo: ${extras.join(", ")}.` : "";
