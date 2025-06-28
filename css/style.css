@@ -96,7 +96,24 @@ h2 {
 }
 
 .buttons a.sim:hover {
-  background-color: #1d4ed8;
+  color: black;
+  background: linear-gradient(
+    270deg,
+    #ffffff 0%,
+    #2563eb 50%,
+    #ffffff 100%
+  );
+  background-size: 400% 400%;
+  animation: buttonAnimation 1s infinite;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .buttons a.nao {

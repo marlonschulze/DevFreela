@@ -53,10 +53,10 @@ document.addEventListener("DOMContentLoaded", function (){
     const textoTipo = formatarTipo(tipo);
     const textoExtras = extras.length > 0 ? ` Incluindo: ${extras.join(", ")}.` : "";
     const mensagem = `Olá! Gostaria de contratar um projeto com os seguintes detalhes:\n\n` +
-    `📌 Tipo: ${textoTipo}\n` +
-    `📅 Prazo: ${dias} dia(s)\n` +
-    (extras.length > 0 ? `🧩 Extras: ${extras.join(", ")}\n\n` : `\n`) + 
-    `💬 Estou pronto para conversar!`;
+    `Tipo: ${textoTipo}\n` +
+    `Prazo: ${dias} dia(s)\n` +
+    (extras.length > 0 ? `Extras: ${extras.join(", ")}\n\n` : `\n`) + 
+    `Estou pronto para conversar!`;
 
      const numero = "5551995563343";
     const linkWhatsapp = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
