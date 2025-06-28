@@ -22,7 +22,7 @@ body{
 }
 
 header{
-  background-color: var(--texto);
+  background-color: var(--azul);
   height: 60px;
   display: flex;
   justify-content: center;
@@ -102,8 +102,25 @@ main p {
 
 }
 
+.card li{
+  color: #1f1f1f;
+}
+
 .card:hover {
-  background: linear-gradient( 200deg, var(--bg), var(--azul));
+  background: #1f1f1f;
+  border: 1px solid var(--bg);
+}
+
+.card:hover h2{
+  color: var(--azul);
+}
+
+.card:hover p{
+  color: var(--bg);
+}
+
+.card:hover li{
+  color: var(--bg);
 }
 
 .processo{
