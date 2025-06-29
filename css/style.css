@@ -18,6 +18,7 @@ body{
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
+  position: relative;
 }
 
 header{
@@ -27,6 +28,8 @@ header{
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
+  padding: 20px;
+  z-index: 1;
 }
 
 .logo-header{
@@ -34,9 +37,9 @@ header{
   width: 0 auto;
 }
 
+
 /*página principal*/
 main{
-  flex: 1;
   padding: 10px 30px;
   opacity: 0;
   transform: translateY(20px);
@@ -107,24 +110,7 @@ h2 {
 }
 
 .buttons a.sim:hover {
-  color: black;
-  background: linear-gradient(
-    270deg,
-    #ffffff 0%,
-    #2563eb 50%,
-    #ffffff 100%
-  );
-  background-size: 400% 400%;
-  animation: buttonAnimation 1s infinite;
-}
-
-@keyframes buttonAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+  background-color: #1e40af;
 }
 
 .buttons a.nao {
