@@ -4,48 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet" />
   <title>DevFreela</title>
 </head>
 <body>
-  <!--header-->
-  <header data-aos="fade-down" data-aos-duration="1300">
+  <header>
     <img src="assets/image/devfreela logo.png" alt="DevFreela" class="logo-header">
   </header>
 
-  <!--página principal-->
   <main>
-    <h1>Criação de sites sob medida para seu negócio crescer online</h1>
-    <p>Escolha o que você precisa ou descubra qual solução é ideal para você.</p>
-    <h2>Já sabe o que precisa?</h2>
-    <div class="buttons" >
-      <a href="#" id="sim" class="sim" data-aos="zoom-out" data-aos-duration="1200">Sim, quero calcular meu projeto</a>
-      <a href="#" id="nao" class="nao" data-aos="zoom-out" data-aos-duration="1800">Não, quero entender melhor</a>
-    </div>
+    <section class="welcome">
+      <h1>Olá! Tudo bem?</h1>
+      <p>Digite o nome da sua empresa:</p>
+      <form id="form">
+        <input type="text" id="name-empresa" placeholder="Ex: Padaria Central" required>
+        <button type="submit">Continuar</button>
+      </form>
+    </section>
+
+    <section id="mensagem" class="hidden">
+      <h2 id="saudacao"></h2>
+      <p>Confira nossos serviços abaixo: </p>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Criação de Sites</h3>
+          <p>Landing Pages, Sites e Lojas Virtuais</p>
+          <a href="html/tipos.html">Saiba mais</a>
+        </div>
+
+        <div class="card">
+          <h3>Manutenções</h3>
+          <p>Atualização, suporte e melhorias para o seu site atual</p>
+          <a href="html/manutenções.html">Saiba mais</a>
+        </div>
+
+        <div class="card">
+          <h3>Conheça mais sobre nós</h3>
+          <p>Quem somos, como trabalhamos e por que confiar na DevFreela</p>
+          <a href="html/sobre.html">Ver mais</a>
+        </div>
+
+        <div class="card">
+          <h3>Calcule seu projeto</h3>
+          <p>Descubra agora o custo estimado da sua ideia</p>
+          <a href="html/calculator.html">Simular agora</a>
+        </div>
+
+        <div class="card">
+          <h3>Fale conosco</h3>
+          <p>Dúvidas? Estamos prontos para conversar com você</p>
+          <a href="https://wa.me/55SEUNUMEROAQUI" target="_blank">Whatsapp</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <p class="convite">
-  Já conhece a DevFreela? Se não, venha nos conhecer com apenas um clique!
-  </p>
 
-  <p>
-  <a href="#" class="btn-sobre" id="sobre">Conheça mais sobre nós</a>
-  </p>
-
-  <!--rodapé-->
+  
   <footer>
-     © 2025 DevFreela — Criado por Marlon
+    © 2025 DevFreela — Criado por Marlon
   </footer>
 
+
   <script src="js/script.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>

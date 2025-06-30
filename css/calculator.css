@@ -215,20 +215,36 @@ button#btn-calcular:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+.redirect-class {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
 .flash {
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin-left: 8px;
-  background-color: white;
+  margin: 20px 5px 0;
   border-radius: 50%;
-  animation: flash 1s infinite;
-  vertical-align: middle;
+  background-color: #2563eb;
+  animation: flash 1.4s infinite ease-in-out both;
 }
 
+.flash1 { animation-delay: -0.32s; }
+.flash2 { animation-delay: -0.16s; }
+.flash3 { animation-delay: 0; }
+
 @keyframes flash {
-  0%, 100% { opacity: 0.2; }
-  50% { opacity: 1; }
+  0%, 80%, 100% {
+    transform: scale(0);
+    opacity: 0.5;
+  } 
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 footer {

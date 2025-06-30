@@ -1,16 +1,15 @@
-  
+const form = document.getElementById('form');
+const input = document.getElementById('name-empresa');
+const saudacao = document.getElementById('saudacao');
+const mensagem = document.getElementById('mensagem');
 
-document.getElementById('sim').addEventListener('click', function(c) {
-  c.preventDefault();
-  window.location.href = "html/calculator.html"; 
-})
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-document.getElementById('nao').addEventListener('click', function(t) {
-  t.preventDefault();
-  window.location.href = "html/tipos.html"
-})
-
-document.getElementById('sobre').addEventListener('click', function(s) {
-  s.preventDefault();
-  window.location.href = "html/sobre.html"
+  const nomeEmpresa = input.value.trim();
+  if(nomeEmpresa){
+    saudacao.innerHTML = `Seja bem-vindo(a), <strong>${nomeEmpresa}</strong>!<br>É um prazer ajudar vocês.`;
+    mensagem.classList.remove('hidden');
+    form.parentElement.classList.add('hidden');
+  }
 })
