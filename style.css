@@ -55,7 +55,7 @@ main {
 .welcome p {
   font-size: 1.1rem;
   margin-bottom: 20px;
-  color: var(--cinza-claro);
+  color: var(--cinza-escuro);
 }
 
 form {
