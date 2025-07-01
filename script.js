@@ -8,6 +8,6 @@ form.addEventListener("submit", function(e) {
   if(nomeEmpresa) {
     localStorage.setItem('empresa', nomeEmpresa);
 
-    window.location.href = "/html/apresentacao.html";
+    window.location.href = "html/apresentacao.html";
   }
 })
