@@ -42,53 +42,6 @@ main {
   padding: 40px 20px;
 }
 
-.welcome {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.welcome h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.welcome p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  color: var(--cinza-escuro);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-}
-
-form input {
-  padding: 12px;
-  width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
-  border: none;
-  font-size: 1rem;
-}
-
-form button {
-  padding: 12px 24px;
-  background-color: var(--azul);
-  color: var(--branco);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-form button:hover {
-  background-color: #1e40af;
-}
-
 #mensagem {
   margin-top: 40px;
 }
@@ -171,7 +124,7 @@ form button:hover {
 
 /* Utilidade */
 .hidden {
-  display: none;
+  display: block;
 }
 
 footer {

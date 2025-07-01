@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -11,54 +13,18 @@
   <title>DevFreela</title>
 </head>
 <body>
-  <header>
+  <header  data-aos="fade-down" data-aos-duration="1300">
     <img src="assets/image/devfreela logo.png" alt="DevFreela" class="logo-header">
   </header>
 
   <main>
-    <section class="welcome">
+    <section class="welcome" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1400" >
       <h1>Olá! Tudo bem?</h1>
       <p>Digite o nome da sua empresa:</p>
       <form id="form">
         <input type="text" id="name-empresa" placeholder="Ex: Padaria Central" required>
         <button type="submit">Continuar</button>
       </form>
-    </section>
-
-    <section id="mensagem" class="hidden">
-      <h2 id="saudacao"></h2>
-      <p>Confira nossos serviços abaixo: </p>
-      <div class="cards-container">
-        <div class="card">
-          <h3>Criação de Sites</h3>
-          <p>Landing Pages, Sites e Lojas Virtuais</p>
-          <a href="html/tipos.html">Saiba mais</a>
-        </div>
-
-        <div class="card">
-          <h3>Manutenções</h3>
-          <p>Atualização, suporte e melhorias para o seu site atual</p>
-          <a href="html/manutenções.html">Saiba mais</a>
-        </div>
-
-        <div class="card">
-          <h3>Conheça mais sobre nós</h3>
-          <p>Quem somos, como trabalhamos e por que confiar na DevFreela</p>
-          <a href="html/sobre.html">Ver mais</a>
-        </div>
-
-        <div class="card">
-          <h3>Calcule seu projeto</h3>
-          <p>Descubra agora o custo estimado da sua ideia</p>
-          <a href="html/calculator.html">Simular agora</a>
-        </div>
-
-        <div class="card">
-          <h3>Fale conosco</h3>
-          <p>Dúvidas? Estamos prontos para conversar com você</p>
-          <a href="https://wa.me/55SEUNUMEROAQUI" target="_blank">Whatsapp</a>
-        </div>
-      </div>
     </section>
   </main>
 
@@ -69,5 +35,9 @@
 
 
   <script src="script.js"></script>
+  <script src="/js/apresentacao.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
