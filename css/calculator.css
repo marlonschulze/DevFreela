@@ -1,7 +1,8 @@
 :root {
   --azul: #2563eb;
-  --texto: #1f1f1f;
-  --fundo: #f0f4ff;
+  --branco: #ffffff;
+  --cinza-claro: #f0f4ff;
+  --cinza-escuro: #1f1f1f;
 }
 
 * {
@@ -12,8 +13,8 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--texto);
-  color: var(--fundo);
+  background: var(--branco);
+  color: var(--cinza-escuro);
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -88,12 +89,20 @@ input[type="number"],
 button {
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--azul);
+  outline: none;
   border-radius: 6px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+select:focus,
+input[type="number"]:focus,
+button:focus{
+  border: 2px solid var(--azul);
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
 }
 
 fieldset {
