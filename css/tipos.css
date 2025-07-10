@@ -1,7 +1,8 @@
 :root{
   --azul: #2563eb;
-  --texto: #1f1f1f;
-  --bg: #f0f4ff;
+  --branco: #ffffff;
+  --cinza-claro: #f0f4ff;
+  --cinza-escuro: #1f1f1f;
 }
 
 *{
@@ -56,7 +57,7 @@ main h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--bg);
+  color: var(--azul);
 }
 
 main p {
@@ -83,7 +84,8 @@ main p {
 
 .card {
   position: relative;
-  background-color: #3f3f3f;
+  background-color: #e0e7ff;
+  border: 1px solid var(--azul);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -121,20 +123,20 @@ main p {
 }
 
 .card:hover {
-  background: #1f1f1f;
-  border: 1px solid var(--bg);
+  background: var(--azul);
+  border: 1px solid var(--cinza-escuro);
 }
 
 .card:hover h2{
-  color: var(--azul);
+  color: var(--branco);
 }
 
 .card:hover p{
-  color: var(--bg);
+  color: var(--branco);
 }
 
 .card:hover li{
-  color: var(--bg);
+  color: var(--branco);
 }
 
 .processo{
@@ -215,7 +217,7 @@ main p {
 .buttons a{
   text-decoration: none;
   background-color: #2563eb;
-  color: var(--bg);
+  color: var(--branco);
   padding: 12px 20px;
   transition: 0.3s;
   width: 90%;
@@ -228,7 +230,7 @@ main p {
 }
 
 .link-manutencao a{
-  color: #e0e7ff;
+  color: var(--cinza-escuro);
 }
 
 .link-manutencao a:hover{
@@ -238,6 +240,7 @@ main p {
 .selo{
   padding: 20px;
   background: #e0e7ff;
+  border: 1px solid var(--azul);
   text-align: center;
   font-weight: 600;
   margin-top: 30px;
