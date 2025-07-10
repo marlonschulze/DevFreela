@@ -1,7 +1,8 @@
 :root{
-  --fundo: #f0f4ff;
-  --color-text: #1f1f1f;
-  --fundo-color: #2563eb;
+  --azul: #2563eb;
+  --branco: #ffffff;
+  --cinza-claro: #f0f4ff;
+  --cinza-escuro: #1f1f1f;
 }
 
 *{
@@ -21,7 +22,7 @@ body{
 }
 
 header{
-  background-color: var(--fundo-color);
+  background-color: var(--azul);
   height: 60px;
   display: flex;
   justify-content: center;
@@ -72,7 +73,8 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #2f2f2f; /* cor sólida azul escuro */
+  background-color: #f1f1f1; 
+  border: 2px solid #e0e7ff;
   color: #6f6f6f;
   padding: 24px;
   border-radius: 8px;
@@ -118,8 +120,8 @@ main{
 }
 
 .card:hover {
-  background-color: #1f1f1f; /* amarelo vivo */
-  color: white; /* azul escuro */
+  background-color: #1f1f1f; 
+  color: white; 
 }
 
 .card:hover .valor {
