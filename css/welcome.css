@@ -1,7 +1,8 @@
 :root{
-  --fundo: #f0f4ff;
-  --color-text: #1f1f1f;
-  --fundo-color: #2563eb;
+  --azul: #2563eb;
+  --branco: #ffffff;
+  --cinza-claro: #f0f4ff;
+  --cinza-escuro: #1f1f1f;
 }
 
 *{
@@ -13,7 +14,7 @@
 
 body{
   font-family: 'Inter', sans-serif;
-  background: var(--color-text);
+  background: var(--branco);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -22,7 +23,7 @@ body{
 }
 
 header{
-  background-color: var(--fundo-color);
+  background-color: var(--azul);
   height: 60px;
   display: flex;
   justify-content: center;
@@ -116,6 +117,7 @@ h2 {
 .buttons a.nao {
   background-color: #e0e7ff;
   color: #1e40af;
+  border: 2px solid var(--azul);
 }
 
 .buttons a.nao:hover {
